@@ -22,30 +22,30 @@ La API permite crear, listar, y gestionar usuarios, así como registrar y consul
        -node index.js (iniciara el servidor en 'http://localhost:3001'
   2. **Probar la API en Postman:**
 
--Crear nuevo usuario
-      * POST /usuarios
-      * body:   {
+**Crear nuevo usuario**
+       POST /usuarios
+       body:   {
                 "nombre": "Juan Pérez",
                 "rol": "Analista"
                 }
--Listar todos los usuarios activos
+**Listar todos los usuarios activos**
       * GET /usuarios
          
--Desactivar un usuario
+**Desactivar un usuario**
       * PATCH /usuarios/:id/desactivar
--Cambiar rol usuario 
+**Cambiar rol usuario** 
       * PATCH /usuarios/:id/rol
       *body: {
           "rol": "Administrador"
         }
         
-- Registrar nueva venta 
+**Registrar nueva venta**
     * POST /ventas
     *body: {
             "nombreComprador": "Cliente Ejemplo",
             "totalCompra": 250.75
             }
-- Listar todas las ventas
+**Listar todas las ventas**
     *GET /ventas
 
     
